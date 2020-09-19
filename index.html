@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function add(){
+var a,c;
+a=Number(document.getElementById("first").value);
+if (a<=16) {
+	c= (40)-(2.5*a);
+}
+else
+{
+	c=0;
+}
+document.getElementById("answer").value= c;
+}
+</script>
+</head>
+<body>
+	<h3>Calculate minimum required marks to pass the exam</h3>
+Enter your average : <input id="first"> <br>
+<p> </p>
+<h4>Min. Required marks = </h4>>
+<button onclick="add()"> Calculate</button>
+<input id="answer">
+<p></p>
+<p></p>
+<p style="color:Tomato;">by #Asp</p>
+</body>
+</html>
